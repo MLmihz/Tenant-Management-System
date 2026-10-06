@@ -1,13 +1,12 @@
 package com.example.tenantmanagementsystem
 
 data class Tenant(
-    val tenantId: String,
     val name: String,
-    val phoneNumber: String,
-    val monthlyRent: Double,
-    val amountPaid: Double
-){
+    val phone: String,
+    val rent: String
+) {
+
     fun summary(): String {
-        return "Tenant: $name\nPhone: $phoneNumber\nRent: KSh $amountPaid"
+        return "Tenant: $name\nPhone: $phone\nRent: KSh $rent"
     }
 }
